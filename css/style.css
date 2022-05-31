@@ -12,14 +12,14 @@ p, h1, h2, h3, h4 {
     line-height: 1.5em;
 }
 
-/* h1 {
-    font-size: 30px;
-} */
+h1 {
+    font-size: 32px;
+}
 
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
-a:hover {text-decoration: none;}
 a:active {text-decoration: none;}
+a:hover {text-decoration: underline;}
 
 .nav-container {
     background-color: #255EE9;
@@ -32,11 +32,11 @@ a:active {text-decoration: none;}
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav > div, nav > ul {
     padding: 5px;
-    flex-grow: 1;
 }
 
 .header-link {
@@ -77,7 +77,7 @@ nav > div, nav > ul {
 .bt-arrow::before {
     content: '\1F817';
     margin-right: 3px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1rem;
     vertical-align: middle;
 }
@@ -97,7 +97,7 @@ nav > div, nav > ul {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
 }
 
 .hd-bt-container {
@@ -112,6 +112,7 @@ nav > div, nav > ul {
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 30px 0;
 }
 
@@ -119,8 +120,16 @@ main section:nth-child(even) {
     background-color: #F6F6F6;
 }
 
+.img-container {
+    width: 60%;
+}
+
 .img-container > img {
-    height: 350px;
+    width: 100%
+}
+
+.txt-container {
+    width: 40%;
 }
 
 section h1 {
@@ -163,7 +172,7 @@ footer {
 }
 
 .ft-sec-item span::after {
-    content: '\02C5';
+    content: '\25BC';
     margin-left: 3px;
 }
 
@@ -175,8 +184,8 @@ footer {
     max-width: 800px;
     margin: auto;
     display: flex;
-    padding-top: 30px;
-    border-bottom: 3px solid #7289DA;
+    padding: 30px 0 20px 0;
+    border-bottom: 2px solid #7289DA;
 }
 
 .ft-sec-item {
@@ -204,7 +213,7 @@ footer {
 }
 
 .footer-bottom {
-    padding-top: 10px;
+    padding: 15px 0 30px 0;
 }
 
 .ft-bt-container {
@@ -212,13 +221,7 @@ footer {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
 }
-
-.ft-bt-container > div {
-    padding: 5px;
-}
-
 
 
 
