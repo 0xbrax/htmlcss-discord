@@ -8,9 +8,13 @@ body {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, h4 {
     line-height: 1.5em;
 }
+
+/* h1 {
+    font-size: 30px;
+} */
 
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
@@ -119,7 +123,7 @@ main section:nth-child(even) {
     height: 350px;
 }
 
-section h2 {
+section h1 {
     margin-bottom: 10px;
 }
 
@@ -149,16 +153,30 @@ section h2 {
     margin-top: 10px;
 }
 
+footer {
+    background-color: #23272A;
+    color: #FFF;
+}
+
+#ita-flag {
+    height: 12px;
+}
+
+.ft-sec-item span::after {
+    content: '\02C5';
+    margin-left: 3px;
+}
+
+.ft-sec-item i {
+    margin-right: 15px;
+}
+
 .footer-section {
     max-width: 800px;
     margin: auto;
     display: flex;
-    padding: 5px 0 15px 0;
-    border-bottom: 5px solid red;
-}
-
-.footer-section > div {
-    height: 350px;
+    padding-top: 30px;
+    border-bottom: 3px solid #7289DA;
 }
 
 .ft-sec-item {
@@ -169,9 +187,24 @@ section h2 {
     width: calc(70% / 4);
 }
 
+.footer-section h2, .footer-section h4 {
+    color: #7289DA;
+}
+
+.ft-sec-item2 ul {
+    list-style: none;
+}
+
+.ft-sec-item2 a {
+    color: #FFF;
+}
+
+.footer-section h2, #flag-line, .footer-section p, .footer-section h4, .footer-section li {
+    margin-bottom: 10px;
+}
+
 .footer-bottom {
     padding-top: 10px;
-    border-bottom: 5px solid red;
 }
 
 .ft-bt-container {
