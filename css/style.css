@@ -56,14 +56,38 @@ nav > div, nav > ul {
     border-width: 0;
 }
 
+.bt-style2 {
+    background-color: #23272A;
+    color: #FFF;
+}
+
+.hd-bt-container > h1 {
+    margin-bottom: 20px;
+}
+
+.hd-bt-container > p {
+    line-height: 1.5em;
+}
+
+.hd-bt-container > button {
+    margin: 10px 5px 0px 5px;
+}
+
 .header-bottom {
-    padding: 30px 0;
+    background-image: url('../img/jumbo.png');
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .hd-bt-container {
-    height: 250px;
     max-width: 600px;
     margin: auto;
+    text-align: center;
+    color: #FFF;
 }
 
 .section-container {
