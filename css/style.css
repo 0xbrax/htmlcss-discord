@@ -8,6 +8,10 @@ body {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+p, h1, h2, h3 {
+    line-height: 1.5em;
+}
+
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
 a:hover {text-decoration: none;}
@@ -51,7 +55,7 @@ nav > div, nav > ul {
 }
 
 .button {
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 20px;
     border-width: 0;
 }
@@ -61,12 +65,21 @@ nav > div, nav > ul {
     color: #FFF;
 }
 
-.hd-bt-container > h1 {
-    margin-bottom: 20px;
+.bt-style3 {
+    background-color: #7289DA;
+    color: #FFF;
 }
 
-.hd-bt-container > p {
-    line-height: 1.5em;
+.bt-arrow::before {
+    content: '\1F817';
+    margin-right: 3px;
+    font-size: 24px;
+    line-height: 1rem;
+    vertical-align: middle;
+}
+
+.hd-bt-container > h1 {
+    margin-bottom: 20px;
 }
 
 .hd-bt-container > button {
@@ -94,29 +107,46 @@ nav > div, nav > ul {
     max-width: 800px;
     margin: auto;
     display: flex;
+    align-items: center;
     padding: 30px 0;
 }
 
-.section-container > div {
-    height: 300px;
+main section:nth-child(even) {
+    background-color: #F6F6F6;
 }
 
-.img-container {
-    width: 60%;
+.img-container > img {
+    height: 350px;
 }
 
-.txt-container {
-    width: 40%;
+section h2 {
+    margin-bottom: 10px;
 }
 
 .section-container2 {
     max-width: 800px;
     margin: auto;
-    padding: 30px 0;
+    padding: 30px 0 60px 0;
+    text-align: center;
 }
 
-.bottom-container {
-    height: 450px;
+.bottom-container > img {
+    height: 500px; 
+}
+
+#star-container {
+    height: 50px;
+    background-image: url('../img/stars.svg'); 
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.bottom-container > button {
+    margin-top: 10px;
 }
 
 .footer-section {
@@ -186,10 +216,6 @@ nav > div, nav > ul {
 
 .debug .section-container .txt-container {
     background-color: #FFC0CB;
-}
-
-.debug main section:nth-child(even) {
-    background-color: #D3D3D3;
 }
 
 .debug .section-container2 .bottom-container {
